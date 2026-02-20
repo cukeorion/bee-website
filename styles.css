@@ -189,6 +189,35 @@ body {
   font-size: 1.1rem;
 }
 
+/* ===== Section Text (plain prose block) ===== */
+.section-text {
+  max-width: 780px;
+  margin: 48px auto 0;
+  color: #4a4a4a;
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+.section-text h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #d4920a;
+  margin-bottom: 14px;
+}
+
+.section-text p {
+  margin-bottom: 14px;
+}
+
+.section-text ul {
+  margin: 10px 0 14px 1.4rem;
+  padding: 0;
+}
+
+.section-text ul li {
+  margin-bottom: 8px;
+}
+
 /* ===== Card Grid ===== */
 .card-grid {
   display: grid;

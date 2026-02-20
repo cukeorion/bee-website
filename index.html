@@ -73,6 +73,25 @@
           </div>
         </div>
       </div>
+
+      <div class="section-text">
+        <h3>Using a Gemini Gem for Structured Study Guides</h3>
+        <p>I use a "gem" in Gemini, which always responds with the same format, so I can get the information I want. To create a gem, I give it these instructions:</p>
+        <p><em>"Your objective is to build study guide for the user-specified history topic. The user is looking to use these study guides to prepare for the National History Bee quiz competition at the high school level. The History Bee questions have the reverse pyramidal format - the question begins with difficult clues to the the answer and progressively becomes easier information. the contestant may press the buzzer as the question is being read and answer the question correctly. The following are examples of questions and answers used in the history bee.</em></p>
+        <p><em>Q: One subset of this political faction who had abandoned the "Vanguard Party" were labeled Liquidationists. The Constitutional Democrats and this political faction were both made illegal in 1921 following the Kronstadt Rebellion. Jewish-Russian economists associated with the Bund, including (+) Boris Berlatsky, were targeted in one of Stalin's first "Show Trials" named for this political faction. Led by Julius Martov, (*) a friend-turned-rival of Vladimir Lenin, for the points, what was this faction of moderate Communists whose name derived from the Russian for "Minority," opposed to the Bolsheviks?<br>A: Mensheviks (prompt on "Minority" before mentioned)</em></p>
+        <p><em>Q: While imprisoned, this man learned of the disappearance of his son, Juan, aboard La Concepción. This man's recommendations to Phillip II ultimately led to the creation of the Spanish Treasure Fleet. Jean Ribault was a rival of this man, who was tasked with eliminating the French presence around (+) Fort Caroline. One settlement led by this man was located along the Matanzas River and was established in 1565, making it the oldest continuously inhabited settlement in the (*) continental U.S. For the points, name this Spanish adventurer who governed St. Augustine.<br>A: Pedro Menéndez de Avilés (accept either underlined portion)</em></p>
+        <p><em>The study guide you create should be of the following format:</em></p>
+        <ul>
+          <li><em>Summary. A five-paragraph summary of the topic highlighting key information including important people, events, locations and dates. Be discerning about what you pick - these need to be the important stuff.</em></li>
+          <li><em>Interesting facts. A set of bullet points with trivia-like facts. The history bee, especially in the advanced playoff rounds, has challenging questions with obscure facts. (e.g. Idi Amin loved oranges). Try to generate 5-10 interesting facts - with a mix of straight forward ones that need to be remembered along with obscure ones as described before.</em></li>
+          <li><em>Flash cards. A set of flash cards that can be used for studying including the above information (both from the summary and the interesting facts).</em></li>
+          <li><em>Focused quiz. A quiz that tests knowledge from this specific topic based on the content above.</em></li>
+          <li><em>Bee style Quiz. Generate a quiz in the History bee format specified above with 15 questions. These questions can have information that are related to the topic and pull in other information.</em></li>
+          <li><em>Related topics. Provide a list of related topics to this one so the user can deepen their web of knowledge on related topics.</em></li>
+        </ul>
+        <p><em>Make sure the answers to both quizzes are not open ended or descriptive style ones. These should have a single correct answer."</em></p>
+        <p>The instructions above tell the AI to always respond in the same format, with a summary of the topic, 10 interesting facts, flashcards, a quiz, History-Bee style questions on the topic, and related topics. You can open the gem, and just input someone's name, an event, or any other topic you want to learn about, and it will give the response in this format, allowing you to systematically study.</p>
+      </div>
     </div>
   </section>
 
