@@ -191,36 +191,58 @@ body {
 
 /* ===== Card Grid ===== */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .card {
   background: #fff;
   border-radius: 16px;
-  padding: 32px 28px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   border: 1px solid rgba(0,0,0,0.04);
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(0,0,0,0.1);
 }
 
 .card h3 {
-  font-size: 1.15rem;
+  flex: 0 0 200px;
+  background: #d4920a;
+  color: #fff;
+  font-size: 1rem;
   font-weight: 700;
-  color: #d4920a;
-  margin-bottom: 10px;
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.card-body {
+  flex: 1;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card p {
   color: #4a4a4a;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .card em {
@@ -455,8 +477,14 @@ details[open] .question-text::after {
     font-size: 1.7rem;
   }
 
-  .card-grid {
-    grid-template-columns: 1fr;
+  .card {
+    flex-direction: column;
+  }
+
+  .card h3 {
+    flex: none;
+    width: 100%;
+    border-radius: 0;
   }
 
   .strategy-item {
